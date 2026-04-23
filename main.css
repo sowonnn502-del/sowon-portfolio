@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #f7f8fa;
+  color: #1a1a1a;
+}
+
+.container {
+  max-width: 720px;
+  margin: 100px auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  letter-spacing: 0.3em;
+  font-weight: 300;
+}
+
+h2 {
+  margin-top: 40px;
+  font-size: 14px;
+  letter-spacing: 0.2em;
+  color: #888;
+}
+
+p {
+  line-height: 1.7;
+}
