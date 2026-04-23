@@ -1,110 +1,93 @@
-/* ===== NewJeans Style: Soft & Minimal ===== */
+/* ===== NewJeans Minimal Style ===== */
 
 :root {
   --bg: #f7f8fa;
   --text-main: #1a1a1a;
   --text-sub: #666;
-  --text-light: #999;
-
-  --card-bg: #ffffff;
-  --border: #eaeaf0;
-
   --accent: #cdd6e4;
 }
 
-body {
+/* Reset */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
   font-family: 'Inter', sans-serif;
   background: var(--bg);
   color: var(--text-main);
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
-/* Layout */
+/* Container */
 .container {
-  max-width: 760px;
-  margin: 100px auto;
+  max-width: 720px;
+  margin: 120px auto;
   padding: 0 20px;
 }
 
 /* Header */
-.header {
-  text-align: center;
-  margin-bottom: 80px;
-}
-
-.header h1 {
-  font-weight: 400;
+.name {
+  font-size: 40px;
   letter-spacing: 8px;
-  font-size: 28px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .tagline {
-  margin-top: 12px;
+  text-align: center;
   color: var(--text-sub);
   font-size: 14px;
+  margin-bottom: 80px;
 }
 
-/* Sections */
-section {
+/* Section */
+.section {
   margin-bottom: 60px;
 }
 
-h2 {
-  font-size: 12px;
-  letter-spacing: 2px;
-  color: var(--text-light);
+.section-title {
+  font-size: 13px;
+  letter-spacing: 3px;
+  color: var(--text-sub);
   margin-bottom: 20px;
 }
 
-/* Work / Education */
-.item {
-  margin-bottom: 28px;
-}
-
-.date {
-  font-size: 12px;
-  color: var(--text-light);
-}
-
-h3 {
-  margin: 6px 0;
-  font-weight: 500;
+/* Text */
+.intro-text {
   font-size: 16px;
+  color: var(--text-main);
 }
 
-ul {
-  margin: 8px 0;
-  padding-left: 18px;
-  color: var(--text-sub);
-  font-size: 14px;
+/* Work */
+.work-item {
+  margin-bottom: 30px;
 }
 
-/* Projects 卡片（重点） */
-.card {
-  background: var(--card-bg);
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: 18px;
-  margin-bottom: 16px;
-
-  transition: all 0.25s ease;
-}
-
-.card:hover {
-  transform: translateY(-4px);
-  border-color: var(--accent);
-}
-
-/* Contact */
-section p {
-  color: var(--text-sub);
-}
-
-/* Footer */
-footer {
-  margin-top: 80px;
-  text-align: center;
+.work-date {
   font-size: 12px;
-  color: var(--text-light);
+  color: var(--text-sub);
+}
+
+.work-company {
+  font-weight: 500;
+  margin: 5px 0;
+}
+
+.work-position {
+  font-size: 14px;
+  color: var(--text-sub);
+}
+
+.work-details {
+  margin-top: 10px;
+  padding-left: 18px;
+}
+
+.work-details li {
+  margin-bottom: 6px;
+  color: var(--text-sub);
 }
