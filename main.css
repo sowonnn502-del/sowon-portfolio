@@ -1,9 +1,10 @@
-/* ===== NewJeans Minimal Style ===== */
+/* ===== NewJeans Soft Minimal UI ===== */
 
 :root {
   --bg: #f7f8fa;
+  --card: #ffffff;
   --text-main: #1a1a1a;
-  --text-sub: #666;
+  --text-sub: #777;
   --accent: #cdd6e4;
 }
 
@@ -19,29 +20,31 @@ body {
   font-family: 'Inter', sans-serif;
   background: var(--bg);
   color: var(--text-main);
-  line-height: 1.7;
+  line-height: 1.8;
 }
 
 /* Container */
 .container {
-  max-width: 720px;
-  margin: 120px auto;
+  max-width: 760px;
+  margin: 100px auto;
   padding: 0 20px;
 }
 
 /* Header */
-.name {
-  font-size: 40px;
-  letter-spacing: 8px;
+.header {
   text-align: center;
+  margin-bottom: 100px;
+}
+
+.name {
+  font-size: 42px;
+  letter-spacing: 10px;
   margin-bottom: 10px;
 }
 
 .tagline {
-  text-align: center;
-  color: var(--text-sub);
   font-size: 14px;
-  margin-bottom: 80px;
+  color: var(--text-sub);
 }
 
 /* Section */
@@ -50,23 +53,34 @@ body {
 }
 
 .section-title {
-  font-size: 13px;
+  font-size: 12px;
   letter-spacing: 3px;
   color: var(--text-sub);
   margin-bottom: 20px;
 }
 
-/* Text */
+/* Intro */
 .intro-text {
   font-size: 16px;
-  color: var(--text-main);
 }
 
-/* Work */
+/* ===== 卡片化（重点）===== */
 .work-item {
-  margin-bottom: 30px;
+  background: var(--card);
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #eee;
+  transition: 0.3s;
 }
 
+/* Hover效果（NewJeans灵魂） */
+.work-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* Work 内容 */
 .work-date {
   font-size: 12px;
   color: var(--text-sub);
@@ -74,7 +88,7 @@ body {
 
 .work-company {
   font-weight: 500;
-  margin: 5px 0;
+  margin: 6px 0;
 }
 
 .work-position {
